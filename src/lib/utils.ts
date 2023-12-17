@@ -1,12 +1,8 @@
-const routingPaths = [/\/board\/([^\/]+)\/([^\/]+)\//, /\/asked\/([^\/]+)\//];
+const routingPaths = /^\/asked\/[a-zA-Z0-9-]+|^\/board(?:\/[a-zA-Z0-9-]+)*$/;
 
 export const CheckRouting = (path: string[]): boolean => {
   const routingpath = "/" + path.join("/");
 
-  for (const routingPath of routingPaths) {
-    if (routingPath.test(routingpath)) {
-      return true;
-    }
-  }
+  if (routingPaths.test(routingpath)) return true;
   return false;
 };

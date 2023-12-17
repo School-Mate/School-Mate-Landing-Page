@@ -11,7 +11,6 @@ interface HybridRoutingPath {
 const HybridRouting = ({ params }: HybridRoutingPath) => {
   const routingpath = "/" + params.hybridpath.join("/");
   const path = CheckRouting(params.hybridpath);
-
   if (!path) return <NotFound />;
 
   return <Applinking path={routingpath} />;
