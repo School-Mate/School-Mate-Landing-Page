@@ -9,7 +9,7 @@ interface ApplinkingProps {
 
 const Applinking = ({ path }: ApplinkingProps) => {
   useEffect(() => {
-    window.open(`schoolmate://app.schoolmate.kr/view?url=${path}`, "_blank");
+    window.location.assign(`schoolmate://app.schoolmate.kr/view?url=${path}`);
   }, []);
 
   const AppLink = () => {
