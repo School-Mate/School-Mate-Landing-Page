@@ -12,6 +12,16 @@ const nanumGothic = Nanum_Gothic({
 export const metadata: Metadata = {
   title: "스쿨메이트",
   description: "같은 학교 친구들과 함께하는 커뮤니티",
+  openGraph: {
+    images: [
+      {
+        url: "https://schoolmate.kr/ogimage.png",
+        width: 1200,
+        height: 630,
+        alt: "스쿨메이트",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
