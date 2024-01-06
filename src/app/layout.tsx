@@ -3,6 +3,7 @@ import { Nanum_Gothic } from "next/font/google";
 import Header from "./_component/Header";
 import "./globals.css";
 import "github-markdown-css/github-markdown.css";
+import GoogleAnalytics from "./GoogleAnalytics";
 
 const nanumGothic = Nanum_Gothic({
   subsets: ["latin"],
@@ -32,6 +33,7 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <head>
+        <GoogleAnalytics />
         <meta name="apple-itunes-app" content="app-id=6473076162" />
       </head>
       <body className={nanumGothic.className}>
