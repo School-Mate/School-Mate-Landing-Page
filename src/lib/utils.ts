@@ -1,4 +1,4 @@
-const routingPaths = /^\/(asked\/.*|board(\/.*)?|verify)$/;
+const routingPaths = /^\/(asked\/.*|board(\/.*)?|verify|fight\/.*)$/;
 
 export const CheckRouting = (path: string[]): boolean => {
   const routingpath = "/" + path.join("/");
