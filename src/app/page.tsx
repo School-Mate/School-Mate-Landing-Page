@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <section className="w-full items-center justify-center flex mx-auto bg-white min-h-[100vh] relative">
+      <section className="w-full items-center justify-center flex mx-auto bg-white min-h-[90vh] relative">
         <div className="w-full items-center justify-center flex mx-auto flex-col px-10">
           <span className="lg:text-3xl text-2xl font-black break-keep text-center">
             <b className="text-primary-500">스쿨메이트 앱</b>을 다운로드
@@ -47,10 +47,10 @@ export default function Home() {
 
         {/* 아래로 내려서 더 알아보기 svg 이미지 그리고 tailwind 바운스 애니메이션 */}
         <div
-          className="absolute bottom-16 left-0 right-0 mx-auto h-16 animate-bounce w-full"
+          className="absolute bottom-10 left-0 right-0 mx-auto h-16 animate-bounce w-full"
           onClick={() => {
             window.scrollTo({
-              top: window.innerHeight,
+              top: window.innerHeight - 64,
               behavior: "smooth",
             });
           }}
@@ -82,7 +82,7 @@ export default function Home() {
               다양한 대결 이벤트에 참여해보세요
             </span>
           </div>
-          <div className="relative overflow-hidden lg:w-2/3 lg:mt-0 mt-8 z-0">
+          <div className="relative overflow-hidden lg:w-2/3 lg:mt-0 mt-9 z-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/fight.gif"
@@ -102,7 +102,7 @@ export default function Home() {
               친구들과 익명 채팅을 해보세요
             </span>
           </div>
-          <div className="relative overflow-hidden lg:w-2/3 lg:mt-0 mt-8 z-0">
+          <div className="relative overflow-hidden lg:w-2/3 lg:mt-0 mt-9 z-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/asked.png"
