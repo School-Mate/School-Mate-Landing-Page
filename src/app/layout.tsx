@@ -4,6 +4,7 @@ import Header from "./_component/Header";
 import "./globals.css";
 import "github-markdown-css/github-markdown.css";
 import GoogleAnalytics from "./GoogleAnalytics";
+import Footer from "./_component/Footer";
 
 const nanumGothic = Nanum_Gothic({
   subsets: ["latin"],
@@ -39,6 +40,7 @@ export default function RootLayout({
       <body className={nanumGothic.className}>
         <Header />
         <main className="pt-[64px] mx-auto">{children}</main>
+        <Footer />
       </body>
     </html>
   );

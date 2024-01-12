@@ -293,13 +293,15 @@ const markdown = `
 const PrivacyPage = () => {
   return (
     <>
-      <Markdown
-        className="markdown-body px-4 py-5"
-        rehypePlugins={[rehypeRaw]}
-        remarkPlugins={[remarkGfm]}
-      >
-        {markdown}
-      </Markdown>
+      <div className="lg:max-w-[1280px] mx-auto">
+        <Markdown
+          className="markdown-body px-4 py-5"
+          rehypePlugins={[rehypeRaw]}
+          remarkPlugins={[remarkGfm]}
+        >
+          {markdown}
+        </Markdown>
+      </div>
     </>
   );
 };
