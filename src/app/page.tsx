@@ -2,8 +2,11 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 
 export default function Home() {
+  const searchParams = useSearchParams();
+
   return (
     <>
       <section className="w-full items-center justify-center flex mx-auto bg-white min-h-[90vh] relative">
@@ -13,7 +16,16 @@ export default function Home() {
             받으세요.
           </span>
           <div className="flex flex-col mt-5 text-lg text-center font-bold break-keep text-[#7C7C7C]">
-            <span className="lg:mt-0">학교 친구들과 함께하는 커뮤니티</span>
+            <span className="lg:mt-0">
+              {searchParams.get("school") ? (
+                <span className="text-primary-500">
+                  {searchParams.get("school")} 친구들과
+                </span>
+              ) : (
+                "학교 친구들과"
+              )}{" "}
+              함께하는 커뮤니티
+            </span>
           </div>
 
           <div className="flex lg:flex-row flex-col mt-10 lg:space-x-6">
