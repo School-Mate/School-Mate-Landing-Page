@@ -13,14 +13,12 @@ export default function Home() {
             받으세요.
           </span>
           <div className="flex flex-col mt-5 text-lg text-center font-bold break-keep text-[#7C7C7C]">
-            <span className="lg:mt-0">
-              앱 스토어, 플레이 스토어에서 스쿨메이트를 검색해보세요.
-            </span>
+            <span className="lg:mt-0">학교 친구들과 함께하는 커뮤니티</span>
           </div>
 
           <div className="flex lg:flex-row flex-col mt-10 lg:space-x-6">
             <Link
-              href="https://apps.apple.com/us/app/%EC%8A%A4%EC%BF%A8%EB%A9%94%EC%9D%B4%ED%8A%B8/id6473076162"
+              href="https://apps.apple.com/app/%EC%8A%A4%EC%BF%A8%EB%A9%94%EC%9D%B4%ED%8A%B8/id6473076162"
               target="_blank"
               className="items-center justify-center flex"
             >
@@ -87,7 +85,7 @@ export default function Home() {
             <img
               src="/images/fight.gif"
               alt="fight"
-              className="object-cover lg:w-[22rem] lg:h-full w-full h-[23rem] z-0 lg:ml-auto rounded-lg"
+              className="object-cover lg:w-[22rem] lg:h-full w-full h-[19rem] z-0 lg:ml-auto rounded-lg"
             />
           </div>
         </div>
@@ -107,7 +105,7 @@ export default function Home() {
             <img
               src="/images/asked.png"
               alt="asked"
-              className="object-cover lg:w-[24rem] lg:h-full w-full h-[18rem] z-0"
+              className="object-cover lg:w-[24rem] lg:h-full w-full h-[15rem] z-0"
             />
           </div>
         </div>
